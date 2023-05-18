@@ -1,12 +1,12 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.11.0"
+lock "~> 3.17.0"
 my_app_name = "digitalwpi"
 set :application, "#{my_app_name}"
 set :repo_url, "https://github.com/DigitalWPI/digitalwpi.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-set :branch, ENV.fetch('REVISION', 'master')
+set :branch, ENV.fetch('REVISION', 'main')
 
 
 # Default deploy_to directory is /var/www/my_app_name
